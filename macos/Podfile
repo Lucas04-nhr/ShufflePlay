@@ -24,13 +24,13 @@ target 'Runner' do
   pod 'just_audio', :path => find_plugin_path('just_audio')
   pod 'macos_window_utils', :path => find_plugin_path('macos_window_utils')
   pod 'package_info_plus', :path => find_plugin_path('package_info_plus')
-  # pod 'path_provider_foundation', :path => find_plugin_path('path_provider_foundation')
+  pod 'path_provider_foundation', :path => "~/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin"
   pod 'screen_retriever', :path => find_plugin_path('screen_retriever')
-  # pod 'sqflite', :path => find_plugin_path('sqflite')
+  pod 'sqflite', :path => "/Users/lucas/.pub-cache/hosted/pub.dev/sqflite-2.3.3+2/darwin"
   pod 'system_theme', :path => find_plugin_path('system_theme')
   pod 'url_launcher_macos', :path => find_plugin_path('url_launcher_macos')
-  # pod 'video_player_avfoundation', :path => find_plugin_path('video_player_avfoundation')
+  pod 'video_player_avfoundation', :path => "~/.pub-cache/hosted/pub.dev/video_player_avfoundation-2.6.1/darwin"
   pod 'wakelock_plus', :path => find_plugin_path('wakelock_plus')
-  # pod 'webview_flutter_wkwebview', :path => find_plugin_path('webview_flutter_wkwebview')
+  pod 'webview_flutter_wkwebview', :path => "~/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.15.0/darwin"
   pod 'window_manager', :path => find_plugin_path('window_manager')
 end

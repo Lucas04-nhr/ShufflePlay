@@ -14,13 +14,25 @@ PODS:
     - FlutterMacOS
   - package_info_plus (0.0.1):
     - FlutterMacOS
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
   - screen_retriever (0.0.1):
+    - FlutterMacOS
+  - sqflite (0.0.3):
+    - Flutter
     - FlutterMacOS
   - system_theme (0.0.1):
     - FlutterMacOS
   - url_launcher_macos (0.0.1):
     - FlutterMacOS
+  - video_player_avfoundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
   - wakelock_plus (0.0.1):
+    - FlutterMacOS
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
     - FlutterMacOS
   - window_manager (0.2.0):
     - FlutterMacOS
@@ -33,10 +45,14 @@ DEPENDENCIES:
   - just_audio (from `/Users/lucas/.pub-cache/hosted/pub.dev/just_audio-0.9.40/macos`)
   - macos_window_utils (from `/Users/lucas/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos`)
   - package_info_plus (from `/Users/lucas/.pub-cache/hosted/pub.dev/package_info_plus-8.0.2/macos`)
+  - path_provider_foundation (from `~/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin`)
   - screen_retriever (from `/Users/lucas/.pub-cache/hosted/pub.dev/screen_retriever-0.1.9/macos`)
+  - "sqflite (from `/Users/lucas/.pub-cache/hosted/pub.dev/sqflite-2.3.3+2/darwin`)"
   - system_theme (from `/Users/lucas/.pub-cache/hosted/pub.dev/system_theme-3.1.1/macos`)
   - url_launcher_macos (from `/Users/lucas/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.1/macos`)
+  - video_player_avfoundation (from `~/.pub-cache/hosted/pub.dev/video_player_avfoundation-2.6.1/darwin`)
   - wakelock_plus (from `/Users/lucas/.pub-cache/hosted/pub.dev/wakelock_plus-1.2.8/macos`)
+  - webview_flutter_wkwebview (from `~/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.15.0/darwin`)
   - window_manager (from `/Users/lucas/.pub-cache/hosted/pub.dev/window_manager-0.4.2/macos`)
 
 SPEC REPOS:
@@ -58,14 +74,22 @@ EXTERNAL SOURCES:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos"
   package_info_plus:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/package_info_plus-8.0.2/macos"
+  path_provider_foundation:
+    :path: "~/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/darwin"
   screen_retriever:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/screen_retriever-0.1.9/macos"
+  sqflite:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/sqflite-2.3.3+2/darwin"
   system_theme:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/system_theme-3.1.1/macos"
   url_launcher_macos:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.1/macos"
+  video_player_avfoundation:
+    :path: "~/.pub-cache/hosted/pub.dev/video_player_avfoundation-2.6.1/darwin"
   wakelock_plus:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/wakelock_plus-1.2.8/macos"
+  webview_flutter_wkwebview:
+    :path: "~/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.15.0/darwin"
   window_manager:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/window_manager-0.4.2/macos"
 
@@ -78,12 +102,16 @@ SPEC CHECKSUMS:
   just_audio: 9b67ca7b97c61cfc9784ea23cd8cc55eb226d489
   macos_window_utils: 933f91f64805e2eb91a5bd057cf97cd097276663
   package_info_plus: fa739dd842b393193c5ca93c26798dff6e3d0e0c
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   screen_retriever: 59634572a57080243dd1bf715e55b6c54f241a38
+  sqflite: 673a0e54cc04b7d6dba8d24fb8095b31c3a99eec
   system_theme: c7b9f6659a5caa26c9bc2284da096781e9a6fcbc
   url_launcher_macos: c82c93949963e55b228a30115bd219499a6fe404
+  video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
   wakelock_plus: 4783562c9a43d209c458cb9b30692134af456269
+  webview_flutter_wkwebview: 0982481e3d9c78fd5c6f62a002fcd24fc791f1e4
   window_manager: 3a1844359a6295ab1e47659b1a777e36773cd6e8
 
-PODFILE CHECKSUM: 9d5c630d402e7ad2ff7f8eaabe8cd649829f2f1e
+PODFILE CHECKSUM: 34f3c8324db83cd8c4a8e6633b92a6de29d98f78
 
 COCOAPODS: 1.15.2

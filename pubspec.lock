@@ -803,7 +803,7 @@ packages:
     source: hosted
     version: "1.2.0"
   macos_window_utils:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: macos_window_utils
       sha256: "230be594d26f6dee92c5a1544f4242d25138a5bfb9f185b27f14de3949ef0be8"

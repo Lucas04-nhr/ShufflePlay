@@ -1,0 +1,23 @@
+PODS:
+  - FlutterMacOS (3.16.0)
+  - macos_window_utils (1.0.0):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - macos_window_utils (from `/Users/lucas/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos`)
+
+SPEC REPOS:
+  trunk:
+    - FlutterMacOS
+
+EXTERNAL SOURCES:
+  macos_window_utils:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos"
+
+SPEC CHECKSUMS:
+  FlutterMacOS: e3a770a0491c92e0a818040ef520b21a29defdbc
+  macos_window_utils: 933f91f64805e2eb91a5bd057cf97cd097276663
+
+PODFILE CHECKSUM: 418bb11c63028edd1d94d3e24e4035166e8df048
+
+COCOAPODS: 1.15.2

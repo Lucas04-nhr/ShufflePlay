@@ -14,23 +14,28 @@ jobs:
       contents: write
     steps:
 
-      - name: 签出仓库
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: master
 
-      - name: 初始化 Flutter 环境
+      - name: Init Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
           architecture: arm64
 
-      - name: 检查环境
+      - name: Check Flutter Version
         run: flutter doctor
 
-      - name: 拉取依赖
+      - name: Pull Dependencies
         run: flutter pub get
+
+      - name: Create Symlink
+        run: |
+          mkdir -p macos/Flutter/ephemeral/.symlinks/plugins/macos_window_utils
+          ln -s ~/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos macos/Flutter/ephemeral/.symlinks/plugins/macos_window_utils/macos      
 
       - name: 打包并压缩
         run: |

@@ -34,7 +34,7 @@ jobs:
 
       - name: Build macOS
         run: |
-          flutter build macos --release --target-platform=darwin-arm64
+          flutter build macos --release
           tar -czvf ShufflePlay.tar.gz -C build/macos/Build/Products/Release/ShufflePlay.app .
 
       - name: Upload Artifact

@@ -1,23 +1,89 @@
 PODS:
+  - audio_session (0.0.1):
+    - FlutterMacOS
+  - desktop_multi_window (0.0.1):
+    - FlutterMacOS
+  - device_info_plus (0.0.1):
+    - FlutterMacOS
+  - file_selector_macos (0.0.1):
+    - FlutterMacOS
   - FlutterMacOS (3.16.0)
+  - just_audio (0.0.1):
+    - FlutterMacOS
   - macos_window_utils (1.0.0):
+    - FlutterMacOS
+  - package_info_plus (0.0.1):
+    - FlutterMacOS
+  - screen_retriever (0.0.1):
+    - FlutterMacOS
+  - system_theme (0.0.1):
+    - FlutterMacOS
+  - url_launcher_macos (0.0.1):
+    - FlutterMacOS
+  - wakelock_plus (0.0.1):
+    - FlutterMacOS
+  - window_manager (0.2.0):
     - FlutterMacOS
 
 DEPENDENCIES:
+  - audio_session (from `/Users/lucas/.pub-cache/hosted/pub.dev/audio_session-0.1.21/macos`)
+  - desktop_multi_window (from `/Users/lucas/.pub-cache/hosted/pub.dev/desktop_multi_window-0.2.0/macos`)
+  - device_info_plus (from `/Users/lucas/.pub-cache/hosted/pub.dev/device_info_plus-10.1.2/macos`)
+  - "file_selector_macos (from `/Users/lucas/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+1/macos`)"
+  - just_audio (from `/Users/lucas/.pub-cache/hosted/pub.dev/just_audio-0.9.40/macos`)
   - macos_window_utils (from `/Users/lucas/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos`)
+  - package_info_plus (from `/Users/lucas/.pub-cache/hosted/pub.dev/package_info_plus-8.0.2/macos`)
+  - screen_retriever (from `/Users/lucas/.pub-cache/hosted/pub.dev/screen_retriever-0.1.9/macos`)
+  - system_theme (from `/Users/lucas/.pub-cache/hosted/pub.dev/system_theme-3.1.1/macos`)
+  - url_launcher_macos (from `/Users/lucas/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.1/macos`)
+  - wakelock_plus (from `/Users/lucas/.pub-cache/hosted/pub.dev/wakelock_plus-1.2.8/macos`)
+  - window_manager (from `/Users/lucas/.pub-cache/hosted/pub.dev/window_manager-0.4.2/macos`)
 
 SPEC REPOS:
   trunk:
     - FlutterMacOS
 
 EXTERNAL SOURCES:
+  audio_session:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/audio_session-0.1.21/macos"
+  desktop_multi_window:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/desktop_multi_window-0.2.0/macos"
+  device_info_plus:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/device_info_plus-10.1.2/macos"
+  file_selector_macos:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+1/macos"
+  just_audio:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/just_audio-0.9.40/macos"
   macos_window_utils:
     :path: "/Users/lucas/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos"
+  package_info_plus:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/package_info_plus-8.0.2/macos"
+  screen_retriever:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/screen_retriever-0.1.9/macos"
+  system_theme:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/system_theme-3.1.1/macos"
+  url_launcher_macos:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.1/macos"
+  wakelock_plus:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/wakelock_plus-1.2.8/macos"
+  window_manager:
+    :path: "/Users/lucas/.pub-cache/hosted/pub.dev/window_manager-0.4.2/macos"
 
 SPEC CHECKSUMS:
+  audio_session: dea1f41890dbf1718f04a56f1d6150fd50039b72
+  desktop_multi_window: 566489c048b501134f9d7fb6a2354c60a9126486
+  device_info_plus: ce1b7762849d3ec103d0e0517299f2db7ad60720
+  file_selector_macos: cc3858c981fe6889f364731200d6232dac1d812d
   FlutterMacOS: e3a770a0491c92e0a818040ef520b21a29defdbc
+  just_audio: 9b67ca7b97c61cfc9784ea23cd8cc55eb226d489
   macos_window_utils: 933f91f64805e2eb91a5bd057cf97cd097276663
+  package_info_plus: fa739dd842b393193c5ca93c26798dff6e3d0e0c
+  screen_retriever: 59634572a57080243dd1bf715e55b6c54f241a38
+  system_theme: c7b9f6659a5caa26c9bc2284da096781e9a6fcbc
+  url_launcher_macos: c82c93949963e55b228a30115bd219499a6fe404
+  wakelock_plus: 4783562c9a43d209c458cb9b30692134af456269
+  window_manager: 3a1844359a6295ab1e47659b1a777e36773cd6e8
 
-PODFILE CHECKSUM: 418bb11c63028edd1d94d3e24e4035166e8df048
+PODFILE CHECKSUM: 9d5c630d402e7ad2ff7f8eaabe8cd649829f2f1e
 
 COCOAPODS: 1.15.2

@@ -1,0 +1,13 @@
+platform :osx, '13' # Set the minimum deployment target to macOS 10.14
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Runner' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Runner
+  pod 'macos_window_utils', :path => 'Flutter/ephemeral/.symlinks/plugins/macos_window_utils/macos'
+
+end

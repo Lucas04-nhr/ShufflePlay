@@ -1,0 +1,52 @@
+name: Build Release macOS aarch64
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    name: Build macOS
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+
+      - name: 签出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: master
+
+      - name: 初始化 Flutter 环境
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          architecture: arm64
+
+      - name: 检查环境
+        run: flutter doctor
+
+      - name: 拉取依赖
+        run: flutter pub get
+
+      - name: 打包并压缩
+        run: |
+          flutter build macos
+          tar -czvf ShufflePlay.tar.gz -C build/macos/Build/Products/Release/ShufflePlay.app .
+
+      - name: 上传文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShufflePlay
+          compression-level: 0
+          path: ShufflePlay.tar.gz
+
+      # - name: 发行Release
+      #   uses: marvinpinto/action-automatic-releases@latest
+      #   with:
+      #     repo_token: ${{ secrets.GITHUB_TOKEN }}
+      #     draft: true
+      #     files: ShufflePlay.tar.gz

@@ -1,13 +1,23 @@
-platform :osx, '13' # Set the minimum deployment target to macOS 10.14
-
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :osx, '13' # Set the minimum deployment target to macOS 13
 
 target 'Runner' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Runner
+  pod 'audio_session', :path => 'Flutter/ephemeral/.symlinks/plugins/audio_session/macos'
+  pod 'desktop_multi_window', :path => 'Flutter/ephemeral/.symlinks/plugins/desktop_multi_window/macos'
+  pod 'device_info_plus', :path => 'Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos'
+  pod 'file_selector_macos', :path => 'Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos'
+  pod 'just_audio', :path => 'Flutter/ephemeral/.symlinks/plugins/just_audio/macos'
   pod 'macos_window_utils', :path => 'Flutter/ephemeral/.symlinks/plugins/macos_window_utils/macos'
-
+  pod 'package_info_plus', :path => 'Flutter/ephemeral/.symlinks/plugins/package_info_plus/macos'
+  pod 'path_provider_foundation', :path => 'Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/macos'
+  pod 'screen_retriever', :path => 'Flutter/ephemeral/.symlinks/plugins/screen_retriever/macos'
+  pod 'sqflite', :path => 'Flutter/ephemeral/.symlinks/plugins/sqflite/macos'
+  pod 'system_theme', :path => 'Flutter/ephemeral/.symlinks/plugins/system_theme/macos'
+  pod 'url_launcher_macos', :path => 'Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos'
+  pod 'video_player_avfoundation', :path => 'Flutter/ephemeral/.symlinks/plugins/video_player_avfoundation/macos'
+  pod 'wakelock_plus', :path => 'Flutter/ephemeral/.symlinks/plugins/wakelock_plus/macos'
+  pod 'webview_flutter_wkwebview', :path => 'Flutter/ephemeral/.symlinks/plugins/webview_flutter_wkwebview/macos'
+  pod 'window_manager', :path => 'Flutter/ephemeral/.symlinks/plugins/window_manager/macos'
 end

@@ -35,29 +35,29 @@ jobs:
       - name: Create Symlink
         run: |
           mkdir -p macos/Flutter/ephemeral/.symlinks/plugins
-          ln -s ~/.pub-cache/hosted/pub.dev/audio_session-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/audio_session/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/desktop_multi_window-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/desktop_multi_window/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/device_info_plus-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/file_selector_macos-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/just_audio-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/just_audio/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/macos_window_utils-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/macos_window_utils/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/package_info_plus-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/package_info_plus/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/path_provider_foundation-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/screen_retriever-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/screen_retriever/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/sqflite-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/sqflite/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/system_theme-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/system_theme/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/url_launcher_macos-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/video_player_avfoundation-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/video_player_avfoundation/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/wakelock_plus-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/wakelock_plus/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/webview_flutter_wkwebview/macos
-          ln -s ~/.pub-cache/hosted/pub.dev/window_manager-<version>/macos macos/Flutter/ephemeral/.symlinks/plugins/window_manager/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/audio_session-0.1.21/macos macos/Flutter/ephemeral/.symlinks/plugins/audio_session/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/desktop_multi_window-0.2.0/macos macos/Flutter/ephemeral/.symlinks/plugins/desktop_multi_window/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/device_info_plus-10.1.2/macos macos/Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+1/macos macos/Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/just_audio-0.9.40/macos macos/Flutter/ephemeral/.symlinks/plugins/just_audio/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/macos macos/Flutter/ephemeral/.symlinks/plugins/macos_window_utils/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/package_info_plus-8.0.2/macos macos/Flutter/ephemeral/.symlinks/plugins/package_info_plus/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0/macos macos/Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/screen_retriever-0.1.9/macos macos/Flutter/ephemeral/.symlinks/plugins/screen_retriever/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/sqflite-2.3.3+2/macos macos/Flutter/ephemeral/.symlinks/plugins/sqflite/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/system_theme-3.1.1/macos macos/Flutter/ephemeral/.symlinks/plugins/system_theme/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.1/macos macos/Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/video_player_avfoundation-2.6.1/macos macos/Flutter/ephemeral/.symlinks/plugins/video_player_avfoundation/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/wakelock_plus-1.2.8/macos macos/Flutter/ephemeral/.symlinks/plugins/wakelock_plus/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.15.0/macos macos/Flutter/ephemeral/.symlinks/plugins/webview_flutter_wkwebview/macos
+            ln -s ~/.pub-cache/hosted/pub.dev/window_manager-0.4.2/macos macos/Flutter/ephemeral/.symlinks/plugins/window_manager/macos
 
-      - name: 打包并压缩
+      - name: Build macOS
         run: |
           flutter build macos --release --target-platform=darwin-arm64
           tar -czvf ShufflePlay.tar.gz -C build/macos/Build/Products/Release/ShufflePlay.app .
 
-      - name: 上传文件
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: ShufflePlay

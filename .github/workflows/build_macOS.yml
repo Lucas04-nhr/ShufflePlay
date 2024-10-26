@@ -43,10 +43,3 @@ jobs:
           name: ShufflePlay
           compression-level: 0
           path: ShufflePlay.zip
-
-      - name: Create Release
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          draft: true
-          files: ShufflePlay.zip

@@ -74,16 +74,44 @@ jobs:
         with:
           fetch-depth: 0
           ref: master
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
       - name: 初始化 Flutter 环境
         uses: subosito/flutter-action@v2
         with:
           channel: stable
-          architecture: x64
+          architecture: arm64
+
       - name: 拉取依赖
         run: flutter pub get
-      - name: 打包
+
+      - name: 构建
         run: flutter build macos
+
+      - name: 打包
+        run: |
+        
+          brew install create-dmg
+          create-dmg \
+            --volname "Shuffle Play" \
+            --volicon "assets/macos/icon.icns" \
+            --background "assets/macos/dmg.png" \
+            --window-pos 200 120 \
+            --window-size 874 620 \
+            --text-size 12 \
+            --icon-size 128 \
+            --icon "./build/macos/Build/Products/Release/ShufflePlay.app" 240 310 \
+            --hide-extension "./build/macos/Build/Products/Release/ShufflePlay.app" \
+            --app-drop-link 650 310 \
+            --filesystem "APFS" \
+            --no-internet-enable \
+            "./build/macos/Build/Products/Release/ShufflePlay.dmg" \
+            "./build/macos/Build/Products/Release/ShufflePlay.app"
+          
       - name: 上传文件
         uses: xresloader/upload-to-github-release@v1
         with:
-          file: ./build/macos/Build/Products/Release/ShufflePlay.app
+          file: ./build/macos/Build/Products/Release/ShufflePlay.dmg

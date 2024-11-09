@@ -93,8 +93,15 @@ jobs:
 
       - name: 打包
         run: |
-        
+          # Install create-dmg
           brew install create-dmg
+
+          # Fix the permission issue
+          epochdate=$(($(date +'%s * 1000 + %-N / 1000000')))
+          tcc_service_appleevents="replace into access (service,client,client_type,auth_value,auth_reason,auth_version,indirect_object_identifier_type,indirect_object_identifier,flags,last_modified) values (\"kTCCServiceAppleEvents\",\"/run\",1,2,4,1,0,\"com.apple.finder\",0,$epochdate);"
+          sudo sqlite3 "/Library/Application Support/com.apple.TCC/TCC.db" "$tcc_service_appleevents"  
+
+          # Create the DMG
           create-dmg \
             --volname "Shuffle Play" \
             --volicon "./assets/macos/volumeicon.icns" \

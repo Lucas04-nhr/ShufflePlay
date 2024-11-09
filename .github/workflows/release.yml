@@ -97,7 +97,7 @@ jobs:
           brew install create-dmg
           create-dmg \
             --volname "Shuffle Play" \
-            --volicon "./assets/macos/icon.icns" \
+            --volicon "./assets/macos/volumeicon.icns" \
             --background "./assets/macos/dmg.png" \
             --window-pos 200 120 \
             --window-size 874 620 \

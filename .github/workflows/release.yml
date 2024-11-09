@@ -110,7 +110,7 @@ jobs:
             --window-size 874 620 \
             --text-size 12 \
             --icon-size 128 \
-            --icon "./build/macos/Build/Products/Release/ShufflePlay.app" 240 310 \
+            # --icon "./build/macos/Build/Products/Release/ShufflePlay.app" 240 310 \
             --hide-extension "./build/macos/Build/Products/Release/ShufflePlay.app" \
             --app-drop-link 650 310 \
             --filesystem "APFS" \
